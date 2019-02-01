@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80.41% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>78/97</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">61.54% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>24/39</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">85% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>17/20</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80.85% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>76/94</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const redis = require('redis');
+const _ = require('lodash');
+const async = require('async');
+&nbsp;
+let client = null;
+let namespace = '';
+&nbsp;
+const { slice } = Array.prototype;
+&nbsp;
+const getKey = key =&gt; `${namespace}::${key}`;
+&nbsp;
+const get = (key, callback) =&gt; {
+  const _key = getKey(key);
+  client.get(_key, (error, result) =&gt; {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (error) {
+<span class="cstat-no" title="statement not covered" >      return callback(error);</span>
+    }
+    return callback(null, JSON.parse(result));
+  });
+};
+&nbsp;
+const set = (key, value, life, callback) =&gt; {
+  const _key = getKey(key);
+  client.set(_key, JSON.stringify(value), (error) =&gt; {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (error) {
+<span class="cstat-no" title="statement not covered" >      callback(error);</span>
+<span class="cstat-no" title="statement not covered" >      return;</span>
+    }
+    if (!life) {
+      callback();
+      return;
+    }
+    client.expire([_key, life || <span class="branch-1 cbranch-no" title="branch not covered" >1]</span>, (error) =&gt; {
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (error) {
+<span class="cstat-no" title="statement not covered" >        console.error(error);</span>
+<span class="cstat-no" title="statement not covered" >        return;</span>
+      }
+      callback();
+    });
+  });
+};
+&nbsp;
+const flush = <span class="fstat-no" title="function not covered" >(k</span>ey, callback) =&gt; {
+  const _key = <span class="cstat-no" title="statement not covered" >getKey(key);</span>
+<span class="cstat-no" title="statement not covered" >  client.keys(_key, <span class="fstat-no" title="function not covered" >(e</span>rror, list) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    if (error) {</span>
+<span class="cstat-no" title="statement not covered" >      callback(error);</span>
+<span class="cstat-no" title="statement not covered" >      return;</span>
+    }
+<span class="cstat-no" title="statement not covered" >    async.each(list, client.del.bind(client), callback);</span>
+  });
+};
+&nbsp;
+const del = (key, callback = <span class="branch-0 cbranch-no" title="branch not covered" >console.error)</span> =&gt; {
+  const _key = getKey(key);
+  client.del(_key, callback);
+};
+&nbsp;
+// 只为cache 函数使用，用来根据用户执行函数的参数中获取到cache的key
+const cacheKey = (tpl, args) =&gt; {
+  const regexp = /\{(\d+)\}/g;
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (!regexp.test(tpl)) {
+<span class="cstat-no" title="statement not covered" >    return tpl;</span>
+  }
+  return tpl.replace(regexp, (m, i) =&gt; args[i]);
+};
+&nbsp;
+const cache = (keyTpl, func, life) =&gt; {
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (!client) <span class="cstat-no" title="statement not covered" >throw Error('cache must be init, at use before');</span>
+&nbsp;
+  function fn () {
+    const _arguments = slice.call(arguments);
+    const callback = _arguments[_arguments.length - 1];
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (!_.isFunction(callback)) {
+<span class="cstat-no" title="statement not covered" >      throw Error('Callback function non-exists');</span>
+    }
+    const args = slice.call(_arguments, 0, _arguments.length - 1);
+    const key = cacheKey(keyTpl, args);
+    get(key, (error, result) =&gt; {
+      /**
+       * 获取cache有错误的时候需要输出，但是不需要通知调用方，对调用方透明
+       * 因为调用方可能压根没有处理这种异常的逻辑
+       * 另外这种并不会影响程序功能
+       * 所以返回给用户将毫无意义，而且会打乱调用方原有的代码
+       */
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (error) {
+<span class="cstat-no" title="statement not covered" >        console.error(error);</span>
+<span class="cstat-no" title="statement not covered" >        return;</span>
+      }
+      // 如果有错误或者结果不存在，则需要执行func
+      if (!error &amp;&amp; result) {
+        callback(null, result);
+        return;
+      }
+      /**
+       * 这里要把用户原有的callback给封装起来，这样我们才能将他的结果cache起来
+       * 这里要注意的是我们只cache成功的结果。失败的，错误的都不cache
+       * 以免影响用户既有功能
+       */
+      args.push((error, result) =&gt; {
+        if (error) {
+          callback(error, result);
+          return;
+        }
+        set(key, result, life, (_error) =&gt; {
+          callback(_error, result);
+        });
+      });
+&nbsp;
+      /**
+       * 执行函数
+       * 因为callback已经是被替换后的函数了。
+       * 所以尽管只是简单的调用的用户的函数，但其实会把他的结果cache起来
+       */
+      func.apply(null, args);
+    });
+  };
+&nbsp;
+  function removeKey () {
+    const _arguments = slice.call(arguments);
+    let callback = _arguments[_arguments.length - 1];
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (!callback) {
+<span class="cstat-no" title="statement not covered" >      callback = console.error;</span>
+    }
+    const args = slice.call(_arguments, 0, _arguments.length - 1);
+    const key = cacheKey(keyTpl, args);
+    del(key, callback);
+  };
+&nbsp;
+  fn.removeKey = removeKey;
+&nbsp;
+  return fn;
+};
+&nbsp;
+cache.init = (port = 6379, ip = '127.0.0.1', opts) =&gt; {
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (client) {
+<span class="cstat-no" title="statement not covered" >    return client;</span>
+  }
+  /* eslint prefer-destructuring: 0 */
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (opts &amp;&amp; opts.namespace) {
+    namespace = opts.namespace;
+  }
+  client = redis.createClient(port, ip, opts || <span class="branch-1 cbranch-no" title="branch not covered" >opts.redis)</span>;
+  client.on('error', <span class="fstat-no" title="function not covered" >(e</span>rror) =&gt; {
+<span class="cstat-no" title="statement not covered" >    console.error(error);</span>
+  });
+  cache.get = get;
+  cache.set = set;
+  cache.del = del;
+  cache.flush = flush;
+  cache.client = client;
+  cache.inited = true;
+  return client;
+};
+&nbsp;
+const notInitial = () =&gt; {
+  throw Error('cache must be init, at use before');
+};
+&nbsp;
+cache.get = notInitial;
+cache.set = notInitial;
+cache.del = notInitial;
+&nbsp;
+module.exports = cache;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Feb 01 2019 15:31:47 GMT+0800 (CST)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>
