@@ -13,3 +13,5 @@ build
 *~
 npm-debug.log
 coverage
+coverage/*
+.vscode

@@ -7,3 +7,5 @@ thumb
 *.js
 *~
 coverage
+coverage/*
+.vscode
