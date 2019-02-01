@@ -6,3 +6,4 @@ thumb
 *.log
 *.js
 *~
+coverage
