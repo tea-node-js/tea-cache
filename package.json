@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/tea-node-js/tea-cache#readme",
   "dependencies": {
-    "async": "^2.6.1",
+    "async": "^3.2.2",
     "lodash": "^4.17.11",
     "redis": "^2.8.0"
   },
